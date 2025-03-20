@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupreesso - Coffee Drinks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-warning fw-bold" href="#">Cupreesso</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="cart-icon">
+                🛒 Cart (<span id="cart-count">0</span>)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4">Indulge in the Perfect Cup</h1>
+        <p class="lead">Hot & Iced Coffee, Brewed to Perfection.</p>
+        <a href="#products" class="btn btn-warning btn-lg">Explore Menu</a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container my-5">
+      <h2 class="text-center mb-4">Our Signature Drinks</h2>
+      <div class="row g-4">
+        <!-- Product 1 - Iced Bubble Drink -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/boba.jpg"
+              class="card-img-top"
+              alt="Iced Bubble Drink"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Bubble Drink</h5>
+              <p class="card-text">
+                Our new bubble drink, an exciting mix of flavors served with
+                ice.
+              </p>
+              <span class="price">195 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Iced Bubble Drink"
+                data-price="4.50"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 - Brain Iced Coffee -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/boba.jpg"
+              class="card-img-top"
+              alt="Brain Iced Coffee"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brain Iced Coffee</h5>
+              <p class="card-text">
+                Iced coffee served in cans with a creative brain design.
+              </p>
+              <span class="price">96 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Brain Iced Coffee"
+                data-price="5.00"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 - Energy Drink XL -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/yellow xl.jpg"
+              class="card-img-top"
+              alt="Energy Drink XL"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Energy Drink XL</h5>
+              <p class="card-text">
+                A refreshing energy drink with an exciting green twist.
+              </p>
+              <span class="price">145 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Energy Drink XL"
+                data-price="3.75"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 - Iced Latte -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/ice latee.jpg"
+              class="card-img-top"
+              alt="Iced Latte"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Latte</h5>
+              <p class="card-text">
+                A cold, creamy iced latte with a smooth coffee finish.
+              </p>
+              <span class="price">150 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Iced Latte"
+                data-price="4.50"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 - Iced Peach Tea -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/ice tea.jpg"
+              class="card-img-top"
+              alt="Iced Peach Tea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Peach Tea</h5>
+              <p class="card-text">
+                Refreshing iced peach tea, perfect for hot days.
+              </p>
+              <span class="price">130 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Iced Peach Tea"
+                data-price="3.25"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 - Iced Mojito -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/mokoto.jpg"
+              class="card-img-top"
+              alt="Iced Mojito"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Mojito</h5>
+              <p class="card-text">
+                A refreshing iced mojito with a minty twist.
+              </p>
+              <span class="price">110 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Iced Mojito"
+                data-price="4.00"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 - Cinnamon Bun with Caramel -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/senabon.jpg"
+              class="card-img-top"
+              alt="Cinnamon Bun with Caramel"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cinnamon Bun with Caramel</h5>
+              <p class="card-text">
+                Delicious cinnamon bun drizzled with creamy caramel.
+              </p>
+              <span class="price">220 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Cinnamon Bun"
+                data-price="3.75"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 - Ice Pistachio Drink -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/ice pistachio.jpg"
+              class="card-img-top"
+              alt="Ice Pistachio Drink"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ice Pistachio Drink</h5>
+              <p class="card-text">
+                A creamy, chilled pistachio flavored drink.
+              </p>
+              <span class="price">165 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Ice Pistachio Drink"
+                data-price="5.00"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 9 - Citrus Energy Drink -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img
+              src="images/green xl.jpg"
+              class="card-img-top"
+              alt="Citrus Energy Drink"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Citrus Energy Drink</h5>
+              <p class="card-text">
+                A sweet citrus energy drink to refresh your day.
+              </p>
+              <span class="price">125 EGP</span>
+              <button
+                class="btn btn-success add-to-cart"
+                data-name="Citrus Energy Drink"
+                data-price="3.50"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="cart-container" class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="cart-total">$0.00</span></p>
+      <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center">
+      <h2>About Cupreesso</h2>
+      <p>
+        At Cupreesso, we believe in the magic of a perfect cup of coffee. Our
+        carefully sourced beans and expert brewing techniques bring you a taste
+        that speaks for itself.
+      </p>
+    </section>
+    <!-- Reviews Section -->
+    <section id="reviews" class="container my-5">
+      <h2 class="text-center mb-4">Customer Reviews</h2>
+
+      <!-- عداد التقييمات الإجمالية -->
+      <div class="text-center">
+        <h4>Total Reviews: <span id="review-count">55</span></h4>
+        <div class="stars">⭐⭐⭐⭐☆</div>
+        <p class="text-muted">Based on 55 customer ratings.</p>
+      </div>
+
+      <hr />
+
+      <!-- التعليقات المكتوبة -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>
+              ☕ "The café is beautiful and quiet, and the drinks are amazing!"
+            </p>
+            <span class="review-author"> Nour ibrahim</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>🌿 "A very relaxing atmosphere and high-quality coffee!"</p>
+            <span class="review-author"> Sarah Mohammed</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>🍵 "One of the best coffee places I've been to!"</p>
+            <span class="review-author"> Khaled Habil</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>
+              🎶 "A cozy and calm place with great music and delicious coffee."
+            </p>
+            <span class="review-author"> Nora Fisal</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>☕ "A fantastic café with friendly staff and perfect drinks."</p>
+            <span class="review-author"> Youssef Kaffarna</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>🌟 "Best cappuccino in town, highly recommended!"</p>
+            <span class="review-author"> Lina Spaih</span>
+          </div>
+        </div>
+        <!-- تعليقات باللهجة العامية مع الأعلام -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>
+              "القعدة في الكافيه تحفة، والجو هادي جدًا، أحسن مكان أذاكر فيه مع
+              فنجان قهوة محترم!"
+            </p>
+            <span class="review-author">- مصطفى 🇪🇬</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>
+              "ياخي المكان دا رهيب! الكوفي لزيز والموظفين مرة محترمين، لازم
+              تجربه!"
+            </p>
+            <span class="review-author">- عبد الله 🇸🇦</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>
+              "والله يا زلمة الكافيه روعة، القهوة عندهم مضبوطة وزاكية كتير، أنصح
+              فيه بشدة!"
+            </p>
+            <span class="review-author">- محمد 🇯🇴</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+
+      <div class="row">
+        <!-- نموذج التواصل -->
+        <div class="col-md-6">
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Write your message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- معلومات التواصل -->
+        <div class="col-md-6">
+          <div class="contact-info">
+            <h4>📍 Our Location</h4>
+            <p>123 Coffee Street, Cairo, Egypt</p>
+
+            <h4>📞 Call Us</h4>
+            <p>+20 123 456 7890</p>
+
+            <h4>📧 Email Us</h4>
+            <p>contact@cupreesso.com</p>
+
+            <h4>🕒 Working Hours</h4>
+            <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      <p>© 2025 Cupreesso - All Rights Reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
